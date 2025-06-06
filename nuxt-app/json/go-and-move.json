@@ -1,0 +1,71 @@
+{
+  "inicio": {
+    "title": "Muévete y Aprende: Educación Física para Todos",
+    "description": "Este sitio es un espacio educativo y dinámico que promueve la actividad física como herramienta fundamental para el desarrollo integral. Explora sus beneficios, rutinas, consejos prácticos y recursos diseñados para toda la comunidad escolar."
+  },
+  "contenido": [
+    {
+      "id": 1,
+      "title": "Importancia de la Educación Física",
+      "text": "La Educación Física reconoce al cuerpo como medio de aprendizaje y promueve un desarrollo cognitivo, emocional y social a través del movimiento.",
+      "media": []
+    },
+    {
+      "id": 2,
+      "title": "Actividades según el nivel educativo",
+      "text": "Desde juegos motores en primaria hasta entrenamientos funcionales en secundaria, cada nivel tiene actividades adaptadas que fomentan el desarrollo físico y emocional.",
+      "media": []
+    },
+    {
+      "id": 3,
+      "title": "Zona activa: participación y práctica",
+      "text": "Retos físicos semanales, rutinas caseras, educación para la salud y recomendaciones nutricionales conforman una sección interactiva para toda la familia.",
+      "media": []
+    }
+  ],
+  "actividades": [
+    {
+      "id": 1,
+      "title": "Juego motor básico",
+      "description": "Imita los movimientos de los animales mientras recorres el aula: saltar como rana, gatear como cangrejo, volar como mariposa.",
+      "items": [
+        "Rana",
+        "Cangrejo",
+        "Mariposa"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Desafío físico semanal",
+      "description": "Graba un video realizando una rutina corta que combine equilibrio, fuerza y ritmo. Súbela a la plataforma y gana puntos por tu esfuerzo.",
+      "answer": ""
+    }
+  ],
+  "evaluacion": [
+    {
+      "id": 1,
+      "question": "¿Qué es una clave primaria?",
+      "options": [
+        "Un campo único",
+        "Un campo opcional",
+        "Un campo repetido"
+      ],
+      "answer": "Un campo único"
+    },
+    {
+      "id": 2,
+      "question": "Escribe una consulta SQL para insertar un registro.",
+      "answer": "INSERT INTO tabla (columna) VALUES (valor);"
+    }
+  ],
+  "acerca_de": {
+    "author": "Equipo de Desarrollo OVA",
+    "members": [
+      "Juan Pérez (Desarrollador)",
+      "Ana Gómez (Diseñadora)",
+      "Luis Martínez (Contenidista)"
+    ],
+    "version": "1.0",
+    "description": "Este OVA fue creado para la asignatura Técnicas Avanzadas de Programación."
+  }
+}
