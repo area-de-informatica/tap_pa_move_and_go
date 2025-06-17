@@ -24,6 +24,14 @@
       </ul>
       <v-divider class="my-4"></v-divider>
       <h3>Historia</h3>
+      <iframe
+          width="70%"
+          height="300"
+          src="https://www.youtube.com/embed/CBq_GbmrXLg"
+          frameborder="0"
+          allowfullscreen
+          class="mt-3"
+        ></iframe>
       <p>La educación física ha evolucionado a lo largo de los siglos, adaptándose a las necesidades sociales, culturales y científicas de cada época.</p>
 
       <p><strong>1. Antigüedad</strong></p>
@@ -168,41 +176,41 @@ const score = ref(null)
 
 // ✅ Manejador del evento saludo con mensaje dinámico
 const handleSaludo = (texto) => {
-  const mensaje = texto.toLowerCase().trim()
+  const mensaje = texto.toLowerCase()
   let respuesta = ''
 
-  if (mensaje.includes('desmotivado') || mensaje.includes('pereza')) {
-    respuesta = 'Empieza con 2 minutos de movimiento. Muchas veces el cuerpo se activa solo al comenzar.'
-  } else if (mensaje.includes('cansado') || mensaje.includes('agotado')) {
-    respuesta = 'Tu cuerpo pide descanso activo. Prueba una caminata suave o estiramientos para recuperar energía.'
-  } else if (mensaje.includes('estresado') || mensaje.includes('ansioso')) {
-    respuesta = 'Respira profundo. Un poco de yoga o una caminata puede ayudarte a liberar esa tensión.'
-  } else if (mensaje.includes('triste') || mensaje.includes('deprimido')) {
-    respuesta = 'El movimiento mejora el ánimo. Prueba con música y ejercicios suaves como baile libre.'
-  } else if (mensaje.includes('hambre')) {
-    respuesta = 'Recuerda alimentarte bien antes y después de moverte. Un snack saludable como fruta o nueces te ayudará.'
-  } else if (mensaje.includes('sed')) {
-    respuesta = 'Hidrátate bien antes de cualquier actividad. El agua es esencial para un buen rendimiento.'
-  } else if (mensaje.includes('aburrido')) {
-    respuesta = 'Cambia la rutina. Intenta un nuevo deporte o juego físico que no hayas probado antes.'
-  } else if (mensaje.includes('dolor') || mensaje.includes('lastimado')) {
-    respuesta = 'Escucha a tu cuerpo. Si sientes dolor, descansa y realiza movimientos suaves como movilidad articular.'
-  } else if (mensaje.includes('solo') || mensaje.includes('abandonado')) {
-    respuesta = 'Invita a un amigo a entrenar o únete a una actividad grupal. ¡Moverse acompañado es más divertido!'
-  } else if (mensaje.includes('débil')) {
-    respuesta = 'Empieza con ejercicios suaves. La constancia te hará sentir más fuerte cada día.'
-  } else if (mensaje.includes('listo') || mensaje.includes('preparado')) {
-    respuesta = '¡Perfecto! Realiza un calentamiento de 3 minutos y luego una rutina de cuerpo completo.'
-  } else if (mensaje.includes('fuerte')) {
-    respuesta = 'Entrena tu fuerza de forma segura. ¿Qué tal unas sentadillas o flexiones hoy?'
-  } else if (mensaje.includes('feliz') || mensaje.includes('motivado')) {
+  if (/\bdesmotivad(o|ó)\b/.test(mensaje)) {
+    respuesta = 'Estás desmotivado. Empieza con solo 2 minutos de movimiento. A veces eso es suficiente para arrancar.'
+  } else if (/\bestresad(o|ó)\b/.test(mensaje)) {
+    respuesta = 'Haz respiraciones profundas o movimientos suaves como estiramientos o una caminata ligera.'
+  } else if (/\btrist(e|é)\b/.test(mensaje)) {
+    respuesta = 'La actividad física puede mejorar tu estado de ánimo. Haz algo suave y que disfrutes.'
+  } else if (/\banimad(o|ó)\b/.test(mensaje)) {
+    respuesta = 'Aprovecha esa energía. Prueba una rutina dinámica o un deporte que te guste.'
+  } else if (/\bcansad(o|ó)\b/.test(mensaje)) {
+    respuesta = 'Escucha a tu cuerpo. Un descanso activo o una sesión suave puede ayudarte a recuperarte.'
+  } else if (/\bfeliz\b/.test(mensaje)) {
+    respuesta = 'Comparte tu alegría en movimiento: baila, corre o haz una rutina divertida.'
+  } else if (/\baburrid(o|ó)\b/.test(mensaje)) {
+    respuesta = 'Prueba una actividad nueva o diferente: juegos, deportes, música o retos físicos.'
+  } else if (/\bsin\s+energ(i|í)a\b/.test(mensaje)) {
+    respuesta = 'Empieza con movimientos lentos. A veces el movimiento trae la energía que necesitas.'
+  } else if (/\bpreocupad(o|ó)\b/.test(mensaje)) {
+    respuesta = 'Moverte puede ayudarte a aclarar la mente. Camina o estira mientras respiras profundo.'
+  } else if (/\bcon\s+energ(i|í)a\b/.test(mensaje)) {
     respuesta = '¡Esa actitud es perfecta! Haz una sesión de entrenamiento funcional y aprovecha tu entusiasmo.'
-  } else if (mensaje.includes('energía') || mensaje.includes('activo')) {
-    respuesta = 'Canaliza esa energía con un circuito de ejercicios de 5 minutos. ¡Hazlo divertido!'
-  } else if (mensaje.includes('felicidad') || mensaje.includes('contento')) {
-    respuesta = '¡La felicidad se contagia! Haz una pequeña rutina física y comparte tu energía con los demás.'
+  } else if (/\bcontent(o|ó)\b/.test(mensaje)) {
+    respuesta = 'Genial. Mantén esa vibra activa con algo que disfrutes como bailar, saltar o jugar.'
+  } else if (/\bnervios(o|ó)\b/.test(mensaje)) {
+    respuesta = 'Haz una pausa activa con respiraciones y movimientos suaves. Te sentirás más tranquilo.'
+  } else if (/\bmotivad(o|ó)\b/.test(mensaje)) {
+    respuesta = 'Aprovecha tu motivación para aprender una nueva habilidad física o mejorar tu rendimiento.'
+  } else if (/\brelajad(o|ó)\b/.test(mensaje)) {
+    respuesta = 'Perfecto para una caminata tranquila o una sesión de estiramientos.'
+  } else if (/\bpesad(o|ó)\b/.test(mensaje)) {
+    respuesta = 'Empieza con ejercicios suaves. A veces el cuerpo solo necesita activarse poco a poco.'
   } else {
-    respuesta = 'Gracias por compartir. Recuerda: moverte a diario mejora tu cuerpo y tu mente. ¡Vamos por ello!'
+    respuesta = 'Gracias por compartir cómo te sientes. El movimiento siempre puede ayudarte.'
   }
 
   alert(respuesta)
