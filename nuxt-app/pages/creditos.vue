@@ -11,7 +11,8 @@
           Descubre la importancia de la actividad física para la salud y el bienestar.
         </v-card-subtitle>
         <v-card-text>
-          La educación física es clave en todas las etapas de la vida. Mejora la salud, fortalece los músculos y promueve hábitos saludables.
+          La educación física ha evolucionado significativamente desde su origen en los antiguos Juegos Olímpicos de la antigua Grecia, donde el cuerpo era valorado como símbolo de fuerza, honor y preparación para la guerra. Con el paso del tiempo, su enfoque se ha transformado, integrando conocimientos científicos, pedagógicos y sociales. Hoy en día, la educación física no solo se centra en el desarrollo atlético, sino también en la formación integral del individuo.
+Actualmente, el ejercicio físico es reconocido como un pilar fundamental para la salud, ayudando a prevenir enfermedades crónicas como la obesidad, la diabetes tipo 2, enfermedades cardiovasculares y problemas musculoesqueléticos. Además, contribuye a mejorar la calidad de vida al fortalecer la salud mental, reducir el estrés, fomentar la socialización y desarrollar valores como la disciplina, el trabajo en equipo y la perseverancia.
         </v-card-text>
       </v-card>
   
