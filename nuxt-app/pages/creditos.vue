@@ -1,92 +1,60 @@
 <template>
-    <v-app>
-    <v-container>
-      <!-- Imagen Principal -->
-     <!-- <v-img src="public/dfb.png" class="main-image" contain></v-img>-->
-  
-      <!-- Sección de Introducción -->
-      <v-card class="pa-5 mt-5 text-center">
-        <v-card-title class="text-h4 font-weight-bold">Bienvenido a Educación Física</v-card-title>
-        <v-card-subtitle class="text-h6">
-          Descubre la importancia de la actividad física para la salud y el bienestar.
-        </v-card-subtitle>
-        <v-card-text>
-          La educación física ha evolucionado significativamente desde su origen en los antiguos Juegos Olímpicos de la antigua Grecia, donde el cuerpo era valorado como símbolo de fuerza, honor y preparación para la guerra. Con el paso del tiempo, su enfoque se ha transformado, integrando conocimientos científicos, pedagógicos y sociales. Hoy en día, la educación física no solo se centra en el desarrollo atlético, sino también en la formación integral del individuo.
-Actualmente, el ejercicio físico es reconocido como un pilar fundamental para la salud, ayudando a prevenir enfermedades crónicas como la obesidad, la diabetes tipo 2, enfermedades cardiovasculares y problemas musculoesqueléticos. Además, contribuye a mejorar la calidad de vida al fortalecer la salud mental, reducir el estrés, fomentar la socialización y desarrollar valores como la disciplina, el trabajo en equipo y la perseverancia.
-        </v-card-text>
-      </v-card>
-  
-      <!-- Sección 1: Historia de la Educación Física -->
-      <v-card class="pa-5 mt-5">
-        <v-card-title class="text-h5 font-weight-bold">Historia de la Educación Física</v-card-title>
-        <v-card-text>
-          La educación física ha evolucionado desde los antiguos Juegos Olímpicos en Grecia hasta los modernos programas de ejercicio y salud.
-          En la actualidad, el ejercicio es fundamental para prevenir enfermedades y mejorar la calidad de vida.
-        </v-card-text>
-        <!--<v-img src="xxx" class="history-image mt-3" contain></v-img>-->
-      </v-card>
-  
-      <!-- Sección 2: Importancia en Diferentes Etapas de la Vida -->
-      <v-card class="pa-5 mt-5">
-        <v-card-title class="text-h5 font-weight-bold">Importancia de la Actividad Física en Diferentes Edades</v-card-title>
-        <v-card-text>
-          <ul>
-            <li><strong>Infancia:</strong> Desarrollo motor, fortalecimiento óseo y prevención de obesidad infantil.</li>
-            <li><strong>Adolescencia:</strong> Mejora la autoestima, la coordinación y la socialización.</li>
-            <li><strong>Adultos:</strong> Prevención de enfermedades cardiovasculares y control del peso.</li>
-            <li><strong>Adultos Mayores:</strong> Mantiene la movilidad, la independencia y reduce el riesgo de caídas.</li>
-          </ul>
-        </v-card-text>
-       <!-- <v-img src="xxx" class="age-exercise-image mt-3" contain></v-img>-->
-      </v-card>
-  
-      <!-- Sección 3: Deportes Más Populares -->
-      <v-card class="pa-5 mt-5">
-        <v-card-title class="text-h5 font-weight-bold">Deportes y Actividades Físicas Más Populares</v-card-title>
-        <v-card-text>
-          La educación física incluye diversos deportes como atletismo, fútbol, natación, gimnasia, ciclismo y yoga. 
-          Cada disciplina ofrece distintos beneficios, como mejorar la resistencia cardiovascular, fortalecer los músculos y aumentar la flexibilidad.
-        </v-card-text>
-        <!--<v-img src="/img/deportes.jpg" class="sports-image mt-3" contain></v-img>-->
-      </v-card>
-  
-      <!-- Sección 4: Videos Recomendados -->
-      <v-card class="pa-5 mt-5">
-        <v-card-title class="text-h5 font-weight-bold">Videos Recomendados</v-card-title>
-        <v-card-text>
-          Aquí tienes algunos videos sobre educación física y bienestar:
-        </v-card-text>
-        <iframe
-          width="100%"
-          height="300"
-          src="https://www.youtube.com/embed/VIDEO_ID_1"
-          frameborder="0"
-          allowfullscreen
-          class="mt-3"
-        ></iframe>
-        <iframe
-          width="100%"
-          height="300"
-          src="https://www.youtube.com/embed/VIDEO_ID_2"
-          frameborder="0"
-          allowfullscreen
-          class="mt-3"
-        ></iframe>
-      </v-card>
-  
-      <!-- Sección 5: Frases Motivacionales -->
-      <v-card class="pa-5 mt-5 text-center">
-        <v-card-title class="text-h5 font-weight-bold">Frases Motivacionales</v-card-title>
-        <v-card-text>
-          <em>"El movimiento es vida."</em><br />
-          <em>"Cuerpo sano, mente sana."</em><br />
-          <em>"El ejercicio no solo cambia tu cuerpo, cambia tu mente, tu actitud y tu humor."</em>
-        </v-card-text>
-        <!--<v-img src="/img/motivacion.jpg" class="motivation-image mt-3" contain></v-img>-->
-      </v-card>
-  
-      <!-- Botones de Navegación -->
-      <v-card-actions class="justify-center mt-5">
+  <v-container>
+    <v-card class="pa-6 my-6" elevation="3" color="blue-grey-lighten-5" rounded="lg">
+      <v-row align="center">
+        <v-col cols="12" md="2" class="text-center">
+          <v-icon color="indigo" size="48">mdi-information-outline</v-icon>
+        </v-col>
+        <v-col>
+          <h1 class="text-h5 font-weight-bold mb-2">Créditos del Proyecto</h1>
+          <p class="text-subtitle-2">
+            Este sitio fue desarrollado con fines educativos para promover la educación física, la alimentación saludable y la actividad consciente en jóvenes.
+          </p>
+        </v-col>
+      </v-row>
+
+      <v-divider class="my-6" />
+
+      <!-- Equipo -->
+      <h2 class="text-subtitle-1 font-weight-medium mb-3">Equipo de desarrollo</h2>
+      <ul>
+        <li><strong>Nombre de los estudiantes:</strong> 
+          <br>
+          Josue Daniel Ballesta Vargas
+        <br>
+        Emanuel Mestra Toscano
+        <br>
+        Ivan Ramos Petro
+      </li>
+        <li><strong>Curso:</strong> Técnicas Avanzadas de Programación</li>
+        <li><strong>Institución:</strong> Universidad de Córdoba</li>
+        <li><strong>Año:</strong> 2025</li>
+      </ul>
+
+      <v-divider class="my-6" />
+
+      <!-- Recursos -->
+      <h2 class="text-subtitle-1 font-weight-medium mb-3">Recursos utilizados</h2>
+      <ul>
+        <li><strong>Framework:</strong> Nuxt 3 + Vuetify 3</li>
+        <li><strong>Gestión de estado:</strong> Pinia</li>
+        <li><strong>Imágenes:</strong>
+          <br>
+           Imágenes libres de derechos de <a href="https://unsplash.com" target="_blank">Unsplash</a> y <a href="https://www.pexels.com" target="_blank">Pexels</a></li>
+        <li><strong>Videos:</strong> YouTube educativo</li>
+        <li><strong>Íconos:</strong> Material Design Icons (mdi)</li>
+      </ul>
+
+      <v-divider class="my-6" />
+
+      <!-- Agradecimientos -->
+      <h2 class="text-subtitle-1 font-weight-medium mb-3">Agradecimientos</h2>
+      <p>Gracias al docente por su guía y acompañamiento durante el proceso de desarrollo del proyecto. A la institución por fomentar el aprendizaje práctico, y a mis compañeros por su colaboración e inspiración.</p>
+    </v-card>
+  </v-container>
+    <!-- Botón para volver -->
+    <!-- Botones de Navegación -->
+    <v-card-actions class="justify-center mt-5">
         <NuxtLink to="/">
           <v-btn color="primary">Ver inicio</v-btn>
         </NuxtLink>
@@ -100,9 +68,12 @@ Actualmente, el ejercicio físico es reconocido como un pilar fundamental para l
           <v-btn color="success">Alimentación</v-btn>
         </NuxtLink>
       </v-card-actions>
-    </v-container>
-</v-app>
-  </template>
+</template>
+
+  
+      
+
+
   
   <style scoped>
   /* Estilos generales de imágenes */
