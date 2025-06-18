@@ -87,8 +87,11 @@ Actualmente, el ejercicio físico es reconocido como un pilar fundamental para l
   
       <!-- Botones de Navegación -->
       <v-card-actions class="justify-center mt-5">
+        <NuxtLink to="/">
+          <v-btn color="primary">Ver inicio</v-btn>
+        </NuxtLink>
         <NuxtLink to="/beneficios">
-          <v-btn color="primary">Ver Beneficios</v-btn>
+          <v-btn color="primary"> Beneficios</v-btn>
         </NuxtLink>
         <NuxtLink to="/ejercicios">
           <v-btn color="secondary">Ejercicios</v-btn>

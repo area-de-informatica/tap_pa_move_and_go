@@ -1,90 +1,220 @@
 <template>
     <v-container>
-      <!-- Imagen Principal -->
-     <!-- <v-img src="xxx" class="main-image" contain></v-img>-->
-  
-      <!-- Sección de Introducción -->
-      <v-card class="pa-5 mt-5 text-center">
-        <v-card-title class="text-h4 font-weight-bold">Bienvenido a Educación Física</v-card-title>
-        <v-card-subtitle class="text-h6">
-          Descubre la importancia de la actividad física para la salud y el bienestar.
-        </v-card-subtitle>
-        <v-card-text>
-          La educación física es clave en todas las etapas de la vida. Mejora la salud, fortalece los músculos y promueve hábitos saludables.
-        </v-card-text>
-      </v-card>
-  
-      <!-- Sección 1: Historia de la Educación Física -->
-      <v-card class="pa-5 mt-5">
-        <v-card-title class="text-h5 font-weight-bold">Historia de la Educación Física</v-card-title>
-        <v-card-text>
-          La educación física ha evolucionado desde los antiguos Juegos Olímpicos en Grecia hasta los modernos programas de ejercicio y salud.
-          En la actualidad, el ejercicio es fundamental para prevenir enfermedades y mejorar la calidad de vida.
-        </v-card-text>
-       <!-- <v-img src="xxx" class="history-image mt-3" contain></v-img>-->
-      </v-card>
-  
-      <!-- Sección 2: Importancia en Diferentes Etapas de la Vida -->
-      <v-card class="pa-5 mt-5">
-        <v-card-title class="text-h5 font-weight-bold">Importancia de la Actividad Física en Diferentes Edades</v-card-title>
-        <v-card-text>
-          <ul>
-            <li><strong>Infancia:</strong> Desarrollo motor, fortalecimiento óseo y prevención de obesidad infantil.</li>
-            <li><strong>Adolescencia:</strong> Mejora la autoestima, la coordinación y la socialización.</li>
-            <li><strong>Adultos:</strong> Prevención de enfermedades cardiovasculares y control del peso.</li>
-            <li><strong>Adultos Mayores:</strong> Mantiene la movilidad, la independencia y reduce el riesgo de caídas.</li>
-          </ul>
-        </v-card-text>
-       <!-- <v-img src="xxx" class="age-exercise-image mt-3" contain></v-img>-->
-      </v-card>
-  
-      <!-- Sección 3: Deportes Más Populares -->
-      <v-card class="pa-5 mt-5">
-        <v-card-title class="text-h5 font-weight-bold">Deportes y Actividades Físicas Más Populares</v-card-title>
-        <v-card-text>
-          La educación física incluye diversos deportes como atletismo, fútbol, natación, gimnasia, ciclismo y yoga. 
-          Cada disciplina ofrece distintos beneficios, como mejorar la resistencia cardiovascular, fortalecer los músculos y aumentar la flexibilidad.
-        </v-card-text>
-       <!-- <v-img src="xxx" class="sports-image mt-3" contain></v-img>-->
-      </v-card>
-  
-      <!-- Sección 4: Videos Recomendados -->
-      <v-card class="pa-5 mt-5">
-        <v-card-title class="text-h5 font-weight-bold">Videos Recomendados</v-card-title>
-        <v-card-text>
-          Aquí tienes algunos videos sobre educación física y bienestar:
-        </v-card-text>
-        <iframe
-          width="100%"
-          height="300"
-          src="https://www.youtube.com/embed/VIDEO_ID_1"
-          frameborder="0"
-          allowfullscreen
-          class="mt-3"
-        ></iframe>
-        <iframe
-          width="100%"
-          height="300"
-          src="https://www.youtube.com/embed/VIDEO_ID_2"
-          frameborder="0"
-          allowfullscreen
-          class="mt-3"
-        ></iframe>
-      </v-card>
-  
-      <!-- Sección 5: Frases Motivacionales -->
-      <v-card class="pa-5 mt-5 text-center">
-        <v-card-title class="text-h5 font-weight-bold">Frases Motivacionales</v-card-title>
-        <v-card-text>
-          <em>"El movimiento es vida."</em><br />
-          <em>"Cuerpo sano, mente sana."</em><br />
-          <em>"El ejercicio no solo cambia tu cuerpo, cambia tu mente, tu actitud y tu humor."</em>
-        </v-card-text>
-      <!--  <v-img src="xx" class="motivation-image mt-3" contain></v-img>-->
-      </v-card>
+  <h1 class="text-h5 font-weight-bold mb-6">Planes de Ejercicio por Objetivo</h1>
+
+  <v-expansion-panels multiple>
+    <!-- 🏋️ Masa Muscular -->
+<v-expansion-panel>
+  <v-expansion-panel-title>🏋️ Aumento de Masa Muscular</v-expansion-panel-title>
+  <v-expansion-panel-text>
+    <v-row>
+      <!-- Imagen -->
+      <v-col cols="12" md="6">
+        <v-img
+          src="/musculo.jpg"
+          height="300px"
+          cover
+          class="rounded-lg"
+        ></v-img>
+      </v-col>
+
+      <!-- Video (puedes dejar src vacío si aún no lo tienes) -->
+      <v-col cols="12" md="6">
+        <v-responsive aspect-ratio="16/9">
+          <iframe
+            width="100%"
+            height="300px"
+            src="https://www.youtube.com/embed/sC2Hd-v2o5c"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </v-responsive>
+      </v-col>
+    </v-row>
+    <ul>
+      <li>
+        <strong>Sentadillas con mochila:</strong> activan cuádriceps, glúteos y core. Al usar peso adicional (como una mochila), se estimula la hipertrofia muscular.
+      </li>
+      <li>
+        <strong>Flexiones de pecho:</strong> fortalecen el pecho, los tríceps y los hombros. Puedes adaptarlas para progresar desde rodillas.
+      </li>
+      <li>
+        <strong>Fondos de tríceps en banco:</strong> desarrollan los músculos del brazo posterior y ayudan a mejorar el empuje vertical y horizontal.
+      </li>
+      <li>
+        <strong>Remo con toalla o mochila:</strong> fortalece la espalda (dorsales, romboides) y mejora la postura.
+      </li>
+    </ul>
+    <p>
+      <strong>Frecuencia:</strong> 3–4 veces por semana. <strong>Rango de repeticiones:</strong> 8–12 para estimular crecimiento muscular. <strong>Descanso:</strong> 60–90 segundos.
+    </p>
+  </v-expansion-panel-text>
+</v-expansion-panel>
+
+
+    <!-- 🦾 Fuerza -->
+    <v-expansion-panel>
+  <v-expansion-panel-title>💪 Mejora de la Fuerza</v-expansion-panel-title>
+  <v-expansion-panel-text>
+    <v-row>
+      <!-- Imagen -->
+      <v-col cols="12" md="6">
+        <v-img
+          src="/fuerza.png"
+          height="300px"
+          cover
+          class="rounded-lg"
+        ></v-img>
+      </v-col>
+
+      <!-- Video (puedes dejar src vacío si aún no lo tienes) -->
+      <v-col cols="12" md="6">
+        <v-responsive aspect-ratio="16/9">
+          <iframe
+            width="100%"
+            height="300px"
+            src="https://www.youtube.com/embed/ISK0w6tx2l8"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </v-responsive>
+      </v-col>
+    </v-row>
+    <ul>
+      <li><strong>Planchas con palmada:</strong> aumentan la fuerza del core y la estabilidad del tronco. Al perder apoyo por un segundo, trabajas estabilidad rotacional.</li>
+      <li><strong>Peso muerto con mochila:</strong> activa glúteos, isquiotibiales y zona lumbar. Fortalece la cadena posterior.</li>
+      <li><strong>Sentadilla isométrica contra la pared:</strong> desarrolla fuerza en cuádriceps y resistencia muscular sin impacto.</li>
+      <li><strong>Flexiones excéntricas lentas:</strong> favorecen el desarrollo muscular mediante control del descenso, clave en fuerza y control neuromuscular.</li>
+    </ul>
+    <p><strong>Objetivo:</strong> Realizar de 4–6 repeticiones lentas por ejercicio, con descansos largos (90–120s) para máxima recuperación.</p>
+  </v-expansion-panel-text>
+</v-expansion-panel>
+
+
+    <!-- 🧠 Funcionalidad -->
+    <v-expansion-panel>
+  <v-expansion-panel-title>🔄 Ejercicio Funcional</v-expansion-panel-title>
+  <v-expansion-panel-text>
+    <v-row>
+      <!-- Imagen -->
+      <v-col cols="12" md="6">
+        <v-img
+          src="/funcional.jpg"
+          height="300px"
+          cover
+          class="rounded-lg"
+        ></v-img>
+      </v-col>
+
+      <!-- Video (puedes dejar src vacío si aún no lo tienes) -->
+      <v-col cols="12" md="6">
+        <v-responsive aspect-ratio="16/9">
+          <iframe
+            width="100%"
+            height="300px"
+            src="https://www.youtube.com/embed/Kd0ht1Hzco0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </v-responsive>
+      </v-col>
+    </v-row>
+    <ul>
+      <li><strong>Subidas a escalón:</strong> simulan movimientos cotidianos. Mejoran fuerza de piernas y equilibrio.</li>
+      <li><strong>Caminata con peso unilateral:</strong> activa el core y estabilizadores al compensar una carga desigual. Ideal para transferencias funcionales.</li>
+      <li><strong>Sentadilla + empuje con banda:</strong> combina fuerza de tren inferior y superior en un solo movimiento. Aumenta coordinación global.</li>
+      <li><strong>Rotaciones de tronco controladas:</strong> mejora movilidad espinal y control de la musculatura oblicua.</li>
+    </ul>
+    <p><strong>Ideal para:</strong> preparar el cuerpo para actividades diarias, deportivas o de trabajo físico general.</p>
+  </v-expansion-panel-text>
+</v-expansion-panel>
+
+
+    <!-- 🦵 Ejercicios Unilaterales -->
+    <v-expansion-panel>
+  <v-expansion-panel-title>🦵 Ejercicios Unilaterales</v-expansion-panel-title>
+  <v-expansion-panel-text>
+    <v-row>
+      <!-- Imagen -->
+      <v-col cols="12" md="6">
+        <v-img
+          src="/unilateral.jpg"
+          height="300px"
+          cover
+          class="rounded-lg"
+        ></v-img>
+      </v-col>
+
+      <!-- Video (puedes dejar src vacío si aún no lo tienes) -->
+      <v-col cols="12" md="6">
+        <v-responsive aspect-ratio="16/9">
+          <iframe
+            width="100%"
+            height="300px"
+            src="https://www.youtube.com/embed/Mv4-sYh0tYY"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </v-responsive>
+      </v-col>
+    </v-row>
+    <ul>
+      <li><strong>Sentadilla a una pierna:</strong> activa glúteo medio, cuádriceps y mejora equilibrio. Excelente para prevenir descompensaciones.</li>
+      <li><strong>Plancha con un apoyo:</strong> exige mayor estabilidad del core. Se fortalece abdomen profundo y musculatura postural.</li>
+      <li><strong>Elevación lateral de pierna:</strong> activa glúteo medio y mejora la alineación de cadera, útil en caminata y carrera.</li>
+      <li><strong>Puente de glúteo con una pierna:</strong> mejora la fuerza del glúteo mayor y la estabilidad lumbopélvica.</li>
+    </ul>
+    <p><strong>Recomendado para:</strong> corregir asimetrías, fortalecer cadenas musculares específicas y mejorar control corporal.</p>
+  </v-expansion-panel-text>
+</v-expansion-panel>
+
+
+    <!-- 🧬 Longevidad corporal -->
+    <v-expansion-panel>
+  <v-expansion-panel-title>🧬 Longevidad y Estabilización Articular</v-expansion-panel-title>
+  <v-expansion-panel-text>
+    <v-row>
+      <!-- Imagen -->
+      <v-col cols="12" md="6">
+        <v-img
+          src="/longevidad.jpg"
+          height="300px"
+          cover
+          class="rounded-lg"
+        ></v-img>
+      </v-col>
+
+      <!-- Video (puedes dejar src vacío si aún no lo tienes) -->
+      <v-col cols="12" md="6">
+        <v-responsive aspect-ratio="16/9">
+          <iframe
+            width="100%"
+            height="300px"
+            src="https://www.youtube.com/embed/N6YmTiwmVOc"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </v-responsive>
+      </v-col>
+    </v-row>
+    <ul>
+      <li><strong>Movilidad cervical:</strong> mejora el rango de movimiento del cuello, aliviando tensiones y mejorando postura.</li>
+      <li><strong>Flexión-extensión de dedos y tobillos:</strong> estimula articulaciones pequeñas, fundamentales para equilibrio y motricidad fina.</li>
+      <li><strong>Fortalecimiento del arco plantar:</strong> caminar descalzo o usar los dedos fortalece los pies y reduce riesgo de lesiones.</li>
+      <li><strong>Equilibrio con un solo apoyo:</strong> trabaja estabilizadores del tobillo, cadera y core. Ideal para prevención de caídas.</li>
+      <li><strong>Estiramientos lentos:</strong> previenen rigidez articular y ayudan a mantener la movilidad a largo plazo.</li>
+    </ul>
+    <p><strong>Recomendación:</strong> realizar todos los días o interdiario, especialmente si estás mucho tiempo sentado.</p>
+  </v-expansion-panel-text>
+</v-expansion-panel>
+
+  </v-expansion-panels>
   
       <!-- Botones de Navegación -->
       <v-card-actions class="justify-center mt-5">
+        <NuxtLink to="/">
+          <v-btn color="yellow">inicio</v-btn>
+        </NuxtLink>
         <NuxtLink to="/beneficios">
           <v-btn color="primary">Ver Beneficios</v-btn>
         </NuxtLink>
