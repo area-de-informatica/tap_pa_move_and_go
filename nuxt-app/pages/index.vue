@@ -84,36 +84,103 @@
   </v-expansion-panel>
 </v-expansion-panels>
 
-<v-card class="pa-4 mb-4">
-<v-card-text>
-      <p>La educación física es fundamental para el desarrollo integral del ser humano. A través de la actividad física, mejoramos nuestra salud, fortalecemos nuestros músculos y fomentamos hábitos saludables.</p>
-      <p>En este sitio encontrarás información sobre los beneficios del ejercicio, rutinas efectivas y consejos de alimentación para mejorar tu rendimiento.</p>
-      <v-divider class="my-4"></v-divider>
-      <h3>¿Por qué es importante la educación física?</h3>
-      <ul>
-        <li>Mejora la salud cardiovascular.</li>
-        <li>Aumenta la fuerza y la resistencia.</li>
-        <li>Reduce el estrés y mejora el estado de ánimo.</li>
-        <li>Fomenta la disciplina y el trabajo en equipo.</li>
-      </ul>
-      <v-divider class="my-4"></v-divider>
-      <h3>Historia</h3>
+
+<v-card elevation="2" class="pa-6 my-6 rounded-lg" color="blue-grey-lighten-5">
+  <v-row align="center">
+    <v-col cols="auto">
+      <v-icon size="48" color="primary">mdi-run-fast</v-icon>
+    </v-col>
+
+    <v-col>
+      <h2 class="text-h6 font-weight-bold mb-2">
+        Educación Física: clave para tu bienestar integral
+      </h2>
+      <p class="mb-2 text-justify">
+        La educación física es fundamental para el desarrollo integral del ser humano. A través de la actividad física,
+        mejoramos nuestra salud, fortalecemos nuestros músculos y fomentamos hábitos saludables.
+      </p>
+      <p class="text-justify">
+        En este sitio encontrarás información sobre los beneficios del ejercicio, rutinas efectivas y consejos de alimentación
+        para mejorar tu rendimiento.
+      </p>
+    </v-col>
+  </v-row>
+</v-card>
+
+      
+<v-card elevation="2" class="pa-6 my-6 rounded-lg" color="light-green-lighten-5">
+  <h2 class="text-h6 font-weight-bold mb-4 text-center">
+    ¿Por qué es importante la educación física?
+  </h2>
+
+  <v-list lines="one" density="compact">
+    <v-list-item>
+      <v-list-item-icon>
+        <v-icon color="success">mdi-heart-pulse</v-icon>
+      </v-list-item-icon>
+      <v-list-item-title>Mejora la salud cardiovascular.</v-list-item-title>
+    </v-list-item>
+
+    <v-list-item>
+      <v-list-item-icon>
+        <v-icon color="primary">mdi-dumbbell</v-icon>
+      </v-list-item-icon>
+      <v-list-item-title>Aumenta la fuerza y la resistencia.</v-list-item-title>
+    </v-list-item>
+
+    <v-list-item>
+      <v-list-item-icon>
+        <v-icon color="deep-purple">mdi-emoticon-happy-outline</v-icon>
+      </v-list-item-icon>
+      <v-list-item-title>Reduce el estrés y mejora el estado de ánimo.</v-list-item-title>
+    </v-list-item>
+
+    <v-list-item>
+      <v-list-item-icon>
+        <v-icon color="orange">mdi-account-group</v-icon>
+      </v-list-item-icon>
+      <v-list-item-title>Fomenta la disciplina y el trabajo en equipo.</v-list-item-title>
+    </v-list-item>
+  </v-list>
+</v-card>
+
+      
+<v-card elevation="2" class="pa-6 my-8 rounded-lg" color="indigo-lighten-5">
+  <v-row align="center" class="mb-4">
+    <v-col cols="auto">
+      <v-icon size="40" color="indigo-darken-2">mdi-book-open-page-variant</v-icon>
+    </v-col>
+    <v-col>
+      <h2 class="text-h5 font-weight-bold mb-1">Historia de la Educación Física</h2>
+      <p class="text-subtitle-2">
+        Descubre cómo ha evolucionado la educación física desde la antigüedad hasta nuestros días, adaptándose a contextos sociales, culturales y científicos.
+      </p>
+    </v-col>
+  </v-row>
+
+  <!-- Contenedor centrado con tamaño ideal -->
+  <div class="mx-auto" style="max-width: 960px;">
+    <v-responsive aspect-ratio="16/9" class="rounded-lg">
       <iframe
-          width="70%"
-          height="300"
-          src="https://www.youtube.com/embed/CBq_GbmrXLg"
-          frameborder="0"
-          allowfullscreen
-          class="mt-3"
-        ></iframe>
-      
+        src="https://www.youtube.com/embed/CBq_GbmrXLg"
+        frameborder="0"
+        allowfullscreen
+        width="100%"
+        height="300px"
+      ></iframe>
+    </v-responsive>
+  </div>
 
-      
+  <v-divider class="my-6"></v-divider>
 
-      <h3>Explora nuestros contenidos</h3>
-      <p>Descubre más sobre cómo llevar una vida activa y saludable en las siguientes secciones:</p>
-    </v-card-text>
-  </v-card>
+  <div class="text-center">
+    <h3 class="text-subtitle-1 font-weight-bold mb-1">Explora nuestros contenidos</h3>
+    <p class="text-body-2">
+      Descubre más sobre cómo llevar una vida activa y saludable en las siguientes secciones:
+    </p>
+  </div>
+</v-card>
+
 
         <v-card-actions>
           <NuxtLink to="/beneficios">
@@ -279,10 +346,47 @@ const handleSaludo = (texto) => {
     respuesta = 'Perfecto para una caminata tranquila o una sesión de estiramientos.'
   } else if (/\bpesad(o|ó)\b/.test(mensaje)) {
     respuesta = 'Empieza con ejercicios suaves. A veces el cuerpo solo necesita activarse poco a poco.'
-  } else {
+  } else if (/\bagotad(o|ó)|rendid(o|ó)\b/.test(mensaje)) {
+    respuesta = 'Si estás agotado, intenta una pausa activa muy suave o simplemente una respiración consciente.'
+  } else if (/\beufóric(o|a)|emocionad(o|ó)\b/.test(mensaje)) {
+    respuesta = '¡Genial! Usa esa energía para bailar, correr o iniciar un nuevo reto.'
+  } else if (/\bconfundid(o|ó)|perdid(o|ó)\b/.test(mensaje)) {
+    respuesta = 'Moverte puede ayudarte a aclarar ideas. Camina un poco o haz estiramientos mientras respiras.'
+  } else if (/\benojad(o|ó)|molest(o|ó)\b/.test(mensaje)) {
+    respuesta = 'Descarga esa tensión con movimientos intensos como saltos, boxeo de sombra o una caminata rápida.'
+  } else if (/\bsueñ(o|o)|dormid(o|ó)\b/.test(mensaje)) {
+    respuesta = 'Activa tu cuerpo con movimientos suaves. Un poco de movimiento puede despejar el sueño.'
+  } else if (/\bsatisfech(o|ó)|plen(o|a)\b/.test(mensaje)) {
+    respuesta = '¡Qué bueno! Aprovecha ese estado para compartir una actividad con otros.'
+  } else if (/\bhiperactiv(o|a)|acelerad(o|ó)\b/.test(mensaje)) {
+    respuesta = 'Descarga energía con una rutina intensa y corta como saltos, sentadillas o cuerda.'
+  } else if (/\bnostálgic(o|a)|melancólic(o|a)\b/.test(mensaje)) {
+    respuesta = 'Un paseo en silencio o una actividad que te guste puede ayudarte a reconectarte contigo.'
+  }
+  if (/\bmal\b/.test(mensaje)) {
+    respuesta = 'Lamento que te sientas mal. Intenta moverte un poco, incluso caminar puede ayudarte a mejorar.'
+  } else if (/\bbien\b/.test(mensaje)) {
+    respuesta = '¡Excelente! Aprovecha ese bienestar para seguir cuidando tu cuerpo con una actividad que disfrutes.'
+  } else if (/\bgenial\b/.test(mensaje)) {
+    respuesta = '¡Eso suena genial! Comparte esa buena energía haciendo ejercicio con alguien más.'
+  } else if (/\bfuert(e|e)\b/.test(mensaje)) {
+    respuesta = '¡Te sientes fuerte! Es un gran momento para retarte con una rutina intensa.'
+  } else if (/\bdébil\b/.test(mensaje)) {
+    respuesta = 'Todos tenemos días difíciles. Prueba con estiramientos suaves y respira profundo, eso también es cuidarte.'
+  } else if (/\bentretenid(o|a)\b/.test(mensaje)) {
+    respuesta = '¡Qué bueno que te diviertes! Recuerda que moverse también puede ser parte de la diversión.'
+  } else if (/\basombr(o|ado|ada)\b/.test(mensaje)) {
+    respuesta = 'Sentir asombro es el inicio del aprendizaje. Muévete con curiosidad y explora lo que tu cuerpo puede hacer.'
+  } else if (/\bganador\b/.test(mensaje)) {
+    respuesta = '¡Esa mentalidad ganadora te lleva lejos! Sigue moviéndote con decisión y actitud positiva.'
+  } else if (/\bperdedor\b/.test(mensaje)) {
+    respuesta = 'Perder también es parte del crecimiento. Lo importante es que sigas adelante. Muévete y mejora cada día.'
+  } else if (/\bvalient(e|e)\b/.test(mensaje)) {
+    respuesta = 'Ser valiente también es moverse incluso cuando no es fácil. ¡Eso es admirable!'
+  }
+  else {
     respuesta = 'Gracias por compartir cómo te sientes. El movimiento siempre puede ayudarte.'
   }
-
   alert(respuesta)
 }
 
@@ -292,13 +396,43 @@ const frases = [
   "Cada paso cuenta. ¡Muévete un poco más hoy!",
   "La constancia supera la perfección.",
   "Hazlo por ti. Tu cuerpo te lo agradecerá.",
+  "Moverse es celebrar que estás vivo.",
+  "Tu cuerpo está hecho para moverse, ¡dale la oportunidad!",
+  "Un poco de actividad hoy es progreso mañana.",
+  "Tu energía aumenta cuando te mueves.",
+  "El esfuerzo de hoy es tu bienestar de mañana.",
+  "Tu mejor versión comienza con un pequeño paso.",
+  "No tienes que ser perfecto, solo constante.",
+  "Cada vez que te mueves, estás invirtiendo en ti.",
+  "Moverse es una forma de agradecer a tu cuerpo.",
+  "Incluso 5 minutos de movimiento hacen la diferencia.",
+  "Cuando te mueves, tu mente también se libera.",
+  "Un cuerpo activo es un cuerpo feliz.",
+  "Sudar también es una forma de sanar.",
+  "La disciplina en movimiento crea confianza en ti mismo.",
+  "Moverse es cuidarse con amor.",
 ]
+
 
 const retos = [
   "Haz 10 sentadillas durante el recreo.",
   "Estira tus brazos por 1 minuto.",
   "Baila tu canción favorita por 2 minutos.",
   "Haz 15 segundos de plancha ahora.",
+  "Haz 20 saltos en tu lugar.",
+  "Camina por 3 minutos sin parar.",
+  "Toca tus pies 15 veces seguidas.",
+  "Realiza 10 abdominales o intentos.",
+  "Sube y baja escaleras durante 1 minuto.",
+  "Haz 5 respiraciones profundas mientras te estiras.",
+  "Mueve tus hombros en círculos durante 30 segundos.",
+  "Haz equilibrio con una pierna por 15 segundos y cambia.",
+  "Patea al aire 10 veces con cada pierna.",
+  "Haz 8 lagartijas o intenta al menos 3.",
+  "Camina hacia atrás durante 20 pasos.",
+  "Reta a alguien a una carrera de 20 metros.",
+  "Haz 10 pasos grandes como si marcharas.",
+  "Imita a un animal caminando por 30 segundos.",
 ]
 
 const frase = ref(frases[Math.floor(Math.random() * frases.length)])
