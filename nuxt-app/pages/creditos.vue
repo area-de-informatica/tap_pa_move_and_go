@@ -40,8 +40,8 @@
         <li><strong>Gestión de estado:</strong> Pinia</li>
         <li><strong>Imágenes:</strong>
           <br>
-           Imágenes libres de derechos de <a href="https://unsplash.com" target="_blank">Unsplash</a> y <a href="https://www.pexels.com" target="_blank">Pexels</a></li>
-        <li><strong>Videos:</strong> YouTube educativo</li>
+          Imágenes elejidas de:  <a href="https://unsplash.com" target="_blank">Unsplash</a> y <a href="https://www.pexels.com" target="_blank">Pexels</a></li>
+        <li><strong>Videos:</strong> YouTube videos sobre ejercicios y alimentación</li>
         <li><strong>Íconos:</strong> Material Design Icons (mdi)</li>
       </ul>
 
