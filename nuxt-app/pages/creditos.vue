@@ -40,7 +40,14 @@
         <li><strong>Gestión de estado:</strong> Pinia</li>
         <li><strong>Imágenes:</strong>
           <br>
-          Imágenes elejidas de:  <a href="https://unsplash.com" target="_blank">Unsplash</a> y <a href="https://www.pexels.com" target="_blank">Pexels</a></li>
+          Imágenes elejidas de: 
+          <br>
+          <a href="https://fabianesilverio.com/dieta-carnivora-cardapio-7-dias/" target="_blank">Carnívora</a> y <a href="https://www.ohga.it/dieta-vegana-come-funziona-e-cosa-prevede-lalimentazione-100-vegetale/" target="_blank">Vegana</a>
+          <a href="https://www.diaridetarragona.com/economia/60289/dieta-mediterranea-modelo-de-dieta-de-proximidad-y-sostenible-20191031-0035-csdt201910310035.html" target="_blank">Mediterránea </a> y <a href="https://www.elpais.com.uy/bienestar/nutricion/conoce-la-dieta-mediterranea-verde-en-que-se-diferencia-de-la-clasica-y-cual-es-su-impacto-en-la-salud" target="_blank">Mediterránea verde</a>
+          <a href="https://www.katiaribeiro.com.br/impacto-dos-vegetais-na-longevidade-segundo-especialistas-de-harvard/" target="_blank">Longeva</a> y <a href="https://mejorconsalud.as.com/entrenamiento-funcional-consiste/" target="_blank">Funcional</a>
+          <a href="https://mundoentrenamiento.com/remo-con-mancuerna/" target="_blank">Unilateral</a> y <a href="https://mundoentrenamiento.com/remo-con-mancuerna/" target="_blank">Fuerza</a>
+          <a href="https://unsplash.com" target="_blank">Unsplash</a> y <a href="https://www.pexels.com" target="_blank">Pexels</a>
+        </li>
         <li><strong>Videos:</strong> YouTube videos sobre ejercicios y alimentación</li>
         <li><strong>Íconos:</strong> Material Design Icons (mdi)</li>
       </ul>

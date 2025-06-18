@@ -224,6 +224,9 @@
         <NuxtLink to="/alimentacion">
           <v-btn color="success">Alimentación</v-btn>
         </NuxtLink>
+        <NuxtLink to="/creditos">
+          <v-btn color="red">Creditos</v-btn>
+        </NuxtLink>
       </v-card-actions>
     </v-container>
   </template>
