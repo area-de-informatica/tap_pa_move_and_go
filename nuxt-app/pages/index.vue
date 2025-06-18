@@ -8,7 +8,81 @@
   v-model="mensaje"
   @saludo="handleSaludo"
 />
+<v-expansion-panels class="my-6">
+  <v-expansion-panel>
+    <v-expansion-panel-title>
+      <v-icon start color="primary">mdi-book-open-variant</v-icon>
+      Historia de la Educación Física
+    </v-expansion-panel-title>
 
+    <v-expansion-panel-text>
+      <v-sheet elevation="1" class="pa-6 rounded-lg">
+        <h2 class="text-h5 font-weight-bold mb-4">Historia de la Educación Física en las Escuelas</h2>
+
+        <h3 class="text-subtitle-1 font-weight-bold mt-4">1. Orígenes antiguos de la actividad física educativa</h3>
+        <p>
+          La práctica de la actividad física con fines educativos tiene sus raíces en las civilizaciones antiguas:
+        </p>
+        <ul>
+          <li><strong>Grecia Antigua:</strong> La educación física era fundamental para formar ciudadanos fuertes, sanos y preparados para la guerra. Se promovía el desarrollo físico junto al mental y moral, siguiendo el ideal del <em>kalokagathía</em> (belleza y bondad).</li>
+          <li><strong>Roma:</strong> Si bien los romanos valoraban la actividad física, esta se enfocaba más en el entrenamiento militar y el entretenimiento público (como los juegos del circo).</li>
+        </ul>
+
+        <h3 class="text-subtitle-1 font-weight-bold mt-4">2. Edad Media: Decadencia del ejercicio físico</h3>
+        <p>
+          Durante la Edad Media, la educación física perdió protagonismo. La Iglesia predominó en la vida educativa, y el cuerpo era visto como fuente de pecado. La actividad física era escasa y no se consideraba parte del proceso formativo.
+        </p>
+
+        <h3 class="text-subtitle-1 font-weight-bold mt-4">3. Renacimiento: Renacer del cuerpo y el movimiento</h3>
+        <p>
+          El Renacimiento revalorizó el cuerpo humano. Los ideales clásicos volvieron a tener peso y se fomentó nuevamente el equilibrio entre cuerpo y mente. Filósofos y educadores como <strong>Vittorino da Feltre</strong> incorporaron juegos y ejercicio físico en sus métodos educativos.
+        </p>
+
+        <h3 class="text-subtitle-1 font-weight-bold mt-4">4. Siglos XVIII y XIX: Formalización de la Educación Física</h3>
+        <p>Durante estos siglos surgieron las primeras propuestas sistemáticas de Educación Física:</p>
+        <ul>
+          <li><strong>Johann Basedow (Alemania):</strong> Incluyó ejercicios físicos en su escuela filantrópica como parte de la formación integral.</li>
+          <li><strong>Guts Muths (considerado el padre de la Educación Física escolar):</strong> Publicó manuales con ejercicios estructurados que podían aplicarse en la escuela.</li>
+          <li><strong>Per Henrik Ling (Suecia):</strong> Fundó el sistema sueco de gimnasia, con un enfoque terapéutico, ordenado y metódico.</li>
+          <li><strong>Francia e Inglaterra:</strong> Desarrollaron programas con orientación militar, deportiva y de salud.</li>
+        </ul>
+
+        <h3 class="text-subtitle-1 font-weight-bold mt-4">5. Siglo XX: Inclusión formal en los sistemas educativos</h3>
+        <p>
+          La Educación Física se integró en los planes de estudio en muchos países como una asignatura obligatoria. Su enfoque varió según las regiones:
+        </p>
+        <ul>
+          <li>En <strong>América Latina</strong>, se impulsó principalmente como parte del civismo y la salud pública.</li>
+          <li>En <strong>Estados Unidos</strong>, se combinaron elementos militares, deportivos y recreativos.</li>
+          <li>En <strong>Europa</strong>, se consolidaron diferentes escuelas: sueca, alemana y francesa.</li>
+        </ul>
+        <p>
+          Durante este siglo también se desarrollaron competencias deportivas escolares, la enseñanza del deporte como medio educativo y la profesionalización del docente de Educación Física.
+        </p>
+
+        <h3 class="text-subtitle-1 font-weight-bold mt-4">6. Siglo XXI: Una visión integral y transversal</h3>
+        <p>
+          Actualmente, la Educación Física ha evolucionado hacia un modelo <strong>integral, inclusivo y activo</strong>, donde se promueve no solo el ejercicio físico, sino también:
+        </p>
+        <ul>
+          <li><strong>Valores humanos y habilidades socioemocionales:</strong> trabajo en equipo, respeto, disciplina, empatía.</li>
+          <li><strong>Salud integral:</strong> prevención de enfermedades, hábitos alimenticios saludables, cuidado emocional.</li>
+          <li><strong>Aprendizaje activo:</strong> se articula con otras áreas del conocimiento, fomentando el aprendizaje a través del movimiento.</li>
+        </ul>
+        <p>
+          Se han incorporado <strong>nuevas metodologías</strong> como el uso de TICs, gamificación, desafíos físicos y aprendizaje basado en proyectos, como se observa en el proyecto <em>Muévete y Aprende</em>.
+        </p>
+
+        <v-divider class="my-4"></v-divider>
+
+        <h3 class="text-h6 font-weight-bold">Conclusión</h3>
+        <p>
+          La historia de la Educación Física en las escuelas muestra cómo esta disciplina ha pasado de ser una preparación militar o un entretenimiento a convertirse en una herramienta educativa fundamental para el desarrollo integral del ser humano. En el siglo XXI, se consolida como una vía para mejorar el bienestar físico, emocional y cognitivo de los estudiantes, integrando cuerpo y mente en el proceso educativo.
+        </p>
+      </v-sheet>
+    </v-expansion-panel-text>
+  </v-expansion-panel>
+</v-expansion-panels>
 
 <v-card class="pa-4 mb-4">
 <v-card-text>
@@ -32,40 +106,9 @@
           allowfullscreen
           class="mt-3"
         ></iframe>
-      <p>La educación física ha evolucionado a lo largo de los siglos, adaptándose a las necesidades sociales, culturales y científicas de cada época.</p>
+      
 
-      <p><strong>1. Antigüedad</strong></p>
-      <p>- Grecia Antigua: La educación física era fundamental para formar ciudadanos fuertes y saludables. Se practicaban deportes como la lucha, el boxeo y el pentatlón. Se integraba en la educación filosófica y militar.</p>
-      <p>- Roma: Se enfocaba más en la preparación militar. Aunque se practicaban actividades físicas, el entrenamiento era más pragmático y orientado al combate.</p>
-
-      <p><strong>2. Edad Media</strong></p>
-      <p>- El enfoque físico decayó con el auge del pensamiento religioso. El cuerpo era considerado menos importante que el alma.</p>
-      <p>- Sin embargo, la caballería mantenía cierta actividad física a través del entrenamiento ecuestre y militar.</p>
-
-      <p><strong>3. Renacimiento</strong></p>
-      <p>- Renace el interés por el cuerpo humano, impulsado por el humanismo. Se vuelve a valorar el ejercicio como parte del desarrollo integral del ser humano.</p>
-
-      <p><strong>4. Siglos XVIII - XIX</strong></p>
-      <p>- Se institucionaliza la educación física en Europa. Destacan sistemas como:</p>
-      <ul>
-        <li>Sistema sueco (Per Henrik Ling): gimnasia terapéutica y estructurada.</li>
-        <li>Sistema alemán (Friedrich Jahn): gimnasia con aparatos, centrado en la disciplina nacionalista.</li>
-      </ul>
-      <p>- Se comienzan a incluir estas prácticas en los programas escolares.</p>
-
-      <p><strong>5. Siglo XX</strong></p>
-      <p>- Se expande a nivel mundial, integrándose a los sistemas educativos formales.</p>
-      <p>- Se desarrollan teorías del entrenamiento, el deporte competitivo y la recreación.</p>
-      <p>- Surgen carreras universitarias especializadas y estudios científicos sobre el ejercicio.</p>
-
-      <p><strong>6. Actualidad</strong></p>
-      <p>- Enfocada en el desarrollo integral: físico, emocional y social.</p>
-      <p>- Abarca temas como la salud, el bienestar, la inclusión, la psicomotricidad y la prevención de enfermedades.</p>
-      <p>- Se adapta a nuevas tecnologías y enfoques pedagógicos modernos.</p>
-
-      <v-divider class="my-4"></v-divider>
-
-      <quiz />
+      
 
       <h3>Explora nuestros contenidos</h3>
       <p>Descubre más sobre cómo llevar una vida activa y saludable en las siguientes secciones:</p>
@@ -87,6 +130,33 @@
           </NuxtLink>
         </v-card-actions>
     
+    <v-container>
+      <v-card class="mb-6" elevation="2" color="blue-lighten-5">
+  <v-card-title class="text-h6 font-weight-bold">
+    🌟 Frase del Día
+  </v-card-title>
+  <v-card-text>
+    {{ frase }}
+  </v-card-text>
+
+  <v-divider class="my-2"></v-divider>
+
+  <v-card-title class="text-h6 font-weight-bold">
+    💪 Reto Activo del Día
+  </v-card-title>
+  <v-card-text>
+    {{ reto }}
+  </v-card-text>
+  <v-card-actions>
+    <v-btn color="primary" @click="cambiarReto">Otro Reto</v-btn>
+  </v-card-actions>
+</v-card>
+
+    
+    
+      </v-container>
+
+
 
       <!-- Cuestionario -->
       <v-container class="mt-6">
@@ -214,6 +284,28 @@ const handleSaludo = (texto) => {
   }
 
   alert(respuesta)
+}
+
+// dentro del <script setup>
+const frases = [
+  "El movimiento es medicina para el cuerpo y la mente.",
+  "Cada paso cuenta. ¡Muévete un poco más hoy!",
+  "La constancia supera la perfección.",
+  "Hazlo por ti. Tu cuerpo te lo agradecerá.",
+]
+
+const retos = [
+  "Haz 10 sentadillas durante el recreo.",
+  "Estira tus brazos por 1 minuto.",
+  "Baila tu canción favorita por 2 minutos.",
+  "Haz 15 segundos de plancha ahora.",
+]
+
+const frase = ref(frases[Math.floor(Math.random() * frases.length)])
+const reto = ref(retos[Math.floor(Math.random() * retos.length)])
+
+const cambiarReto = () => {
+  reto.value = retos[Math.floor(Math.random() * retos.length)]
 }
 
 
